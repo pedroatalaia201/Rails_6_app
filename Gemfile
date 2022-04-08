@@ -22,6 +22,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#RailsAdmin
+gem "rails_admin"
+
+#ContentBuilder_6
+gem "rails_admin_content_builder_rails_6", path: "rails_admin_content_builder_rails_6"
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
