@@ -1,3 +1,44 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.news{
+    margin: 2.5rem 0;
+
+    .section_title{
+        border-bottom: #d31837 1px solid;
+        margin: 0;
+
+        color: 	#d31837;
+        font-size: 20px;
+    }
+
+    .content{
+        margin: 2rem auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .link{
+            width: 25rem;
+            height: 20rem;
+            margin: 1rem 1rem 1.5rem 1rem;
+            background-color: aliceblue;
+
+            .image{
+                width: 25rem;
+                height: 15rem;
+            }
+
+            .title{
+                width: 24rem;
+                height: auto;
+                margin: 0.3rem 0rem 1.5rem 0rem;
+                padding: 0rem 0.5rem 0rem 0.5rem;
+                color: gray;
+            }
+        }
+    }
+}
