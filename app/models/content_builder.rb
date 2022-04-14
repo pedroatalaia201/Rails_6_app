@@ -16,6 +16,6 @@ class ContentBuilder < RailsAdminContentBuilder::ContentBuilder
     end
     
     def date_published
-        date_publish.strftime("%d/%m/%Y")
+        date_publish.strftime("%d/%m/%Y").to_s
     end
 end

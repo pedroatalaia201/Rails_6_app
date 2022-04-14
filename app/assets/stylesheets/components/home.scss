@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.news{
+.top_news, .news{
     margin: 2.5rem 0;
 
     .section_title{
@@ -25,6 +25,7 @@
             width: 25rem;
             height: 20rem;
             margin: 1rem 1rem 1.5rem 1rem;
+
             background-color: aliceblue;
 
             .image{
@@ -33,12 +34,19 @@
             }
 
             .title{
-                width: 24rem;
+                width: 24rem; // to fit within the link with the padding
                 height: auto;
+
                 margin: 0.3rem 0rem 1.5rem 0rem;
                 padding: 0rem 0.5rem 0rem 0.5rem;
+                
                 color: gray;
             }
+        }
+
+        .nothing{
+            font-weight: bold;
+            color: gray;
         }
     }
 }

@@ -1,2 +1,26 @@
-<h1>News#show</h1>
-<p>Find me in app/views/news/show.html.erb</p>
+<div class = "container">
+    <section class = "news_header">
+        <div class = "date">
+            <div class = "line"></div>
+            <p>
+                <%= @news.category.to_s %>
+            </p>
+        </div>
+
+        <h1 class = "news_title">
+            <%= @news.title %>
+        </h1>
+
+        <div class = "date">
+            <div class = "line"></div>
+
+            <p>
+                <%= @news.date_published %>
+            </p>
+        </div>
+    </section>
+
+    <section class = "body">
+        <%= @news.content_sanitized %>
+    </section>
+</div>

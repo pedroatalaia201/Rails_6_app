@@ -4,5 +4,6 @@ class NewsController < ApplicationController
   end
 
   def show
+    @news = ContentBuilder.find_by_slug(params[:category])
   end
 end

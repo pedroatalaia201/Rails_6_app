@@ -1,4 +1,20 @@
 <div class = "container">
+    <section class = "top_news">
+        <h2 class = "section_title">
+            Featured Content
+        </h2>
+
+        <div class = "content">
+            <% if @top_news != nil %>
+                <%# There will be some stuff  %>
+            <% else %>
+                <h3 class = "nothing">
+                    Nothing to show yet...
+                </h3>
+            <% end %>
+        </div>
+    </section>
+
     <section class = "news">
         <h2 class = "section_title">
             Content Builder
@@ -6,7 +22,7 @@
 
         <div class = "content">
             <% @news.each do |news| %>
-                <%= link_to(root_path, class: "link") do %>
+                <%= link_to(news_show_path(news.slug), class: "link") do %>
                     <% if news.cover.present? %>
                         <%= image_tag(news.cover, class: "image") %>
                     <% end %>
